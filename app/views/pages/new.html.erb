@@ -1,0 +1,8 @@
+<h1> Create new </h1>
+<%= form_for @user do |f| %>
+	Name: <%= f.text_field :name %>
+	Email: <%= f.text_field :email %>
+	Password: <%= f.text_field :password %>
+	Repeat Your Password<%= f.text_field :passwordRepeat %>
+	<%= f.submit %>
+<%end%>

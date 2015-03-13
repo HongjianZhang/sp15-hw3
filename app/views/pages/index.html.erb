@@ -1,0 +1,24 @@
+<h1>Users</h1>
+
+<p>
+<% @user.each do |u|%>
+  <p> <%= u.name %> </p>
+  <p> <%= u.email %> </p>
+<% end %>
+</p>
+<%= link_to "Go to new page", users_new_path %>
+
+<h1>Cats</h1>
+
+<p>
+<% @cat.each do |c|%>
+  <p> <%= c.meow %> </p>
+<% end %>
+</p>
+
+
+<h1>Todos</h1>
+
+<p>
+<%= @todo %>
+</p>
